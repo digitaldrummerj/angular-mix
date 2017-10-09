@@ -45,6 +45,5 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
-  'GET /user/identity': 'UserController.userIdentity',
 
 };
