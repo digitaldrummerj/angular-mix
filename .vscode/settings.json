@@ -1,0 +1,27 @@
+{
+  "vsicons.presets.angular": false,
+    "editor.fontSize":18,
+    "terminal.integrated.fontSize": 18,
+    "editor.wordWrap": "on",
+    "editor.tabSize": 3,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    }
+,
+"window.zoomLevel": 4,
+"files.autoSave": "off",
+"editor.minimap.enabled": false,
+"vsicons.projectDetection.autoReload": true,
+"workbench.colorTheme": "Default Light+",
+"terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\cmd.exe"
+
+}
