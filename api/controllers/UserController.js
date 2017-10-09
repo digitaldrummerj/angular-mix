@@ -113,7 +113,7 @@ module.exports = {
   delete: function (req, res) {
 
     User.update({
-      id: req.session.user.id
+      id: req.session.user
     }, {
         deleted: true
       }, function (err, removedUser) {
@@ -129,7 +129,7 @@ module.exports = {
   },
 
   update: function (req, res) {
-    User.update(req.session.user.id, req.body)
+    User.update(req.session.user, req.body)
       .exec(function (err, user) {
         if (err) return res.negotiate(err);
 
@@ -142,8 +142,8 @@ module.exports = {
   },
 
   find: function findFn(req, res) {
-    User.findOne({
-      id: req.session.user.id
+    User.find({
+      id: req.session.user
     })
       .populate('todoItems')
       .exec(function (err, user) {
@@ -158,13 +158,13 @@ module.exports = {
   },
   findOne: function findOneFn(req, res) {
     User.findOne({
-      id: req.session.user.id
+      id: req.session.user
     })
       .populate('todoItems')
       .exec(function (err, user) {
         if (err) return res.negotiate(err);
 
-        if (user.length === 0) {
+        if (!user) {
           return res.notFound();
         }
 

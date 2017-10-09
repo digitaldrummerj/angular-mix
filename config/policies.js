@@ -18,12 +18,5 @@
 
 
 module.exports.policies = {
-  UserController: {
-    create: ['isLoggedOut'],
-    login: ['isLoggedOut'],
-    '*': ['isLoggedIn'],
-  },
-  TodoController: {
-    '*': ['isLoggedIn']
-  }
+
 };
