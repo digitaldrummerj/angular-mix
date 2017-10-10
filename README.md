@@ -104,5 +104,4 @@ There are 4 branches that are used for the talks as follows
         "password": "123456"
       }
       ```
-
 1. Once you are logged in you can play with both the user and todo API
