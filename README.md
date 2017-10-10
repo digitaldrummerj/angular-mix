@@ -94,7 +94,7 @@ There are 4 branches that are used for the talks as follows
 1. Run `sails lift`
 1. Open Postman
 1. Login if user exist at http://localhost:1337/user/login or Create a user at http://localhost:1337/user
-  * Body:
+    * Body:
       * Raw
       * Type: Application/Json
 
