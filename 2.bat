@@ -1,2 +1,2 @@
-git checkout 2-policies
+git checkout 2-policies -f
 sails lift
